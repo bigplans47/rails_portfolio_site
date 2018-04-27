@@ -12,6 +12,7 @@ Personal Interests
 # README
 
 -At 1pm sent time reviewing classwork/homework
+-At 3pm reviewing information about bootstrap in Rails
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

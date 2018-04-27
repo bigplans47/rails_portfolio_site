@@ -1,7 +1,5 @@
 class ProjectsController < ApplicationController
-  # def index
-  #   @projects = Project.all
-  # end
+
   def index
     @projects = Project.all
   end
@@ -42,6 +40,8 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project = Project.find(params[:id])
+    binding.pry
+    p @project, 'yo'
     @project.destroy
     flash[:notice] = 'Project removed'
     redirect_to projects_path
