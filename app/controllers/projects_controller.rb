@@ -33,7 +33,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     if @project.update(project_params)
       flash[:notice] = 'Project updated'
-      redirect_to projects_path
+      redirect_to project_path(@project)
     else
       flash[:alert] = 'Project not updated'
       render :edit
