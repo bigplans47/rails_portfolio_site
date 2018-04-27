@@ -1,10 +1,13 @@
 List your strengths in your README
 -Startup - Able to get moving even when starting with scratch
--Progress - Good at project setup and error prevention
+-Progress - Good at building out features and addressing errors when seen
 -Transparent - Good commit history to clearly see project narrative
 -Foundation - Good at watching details and building off them
 -Independent - Good at self help to solve issues
 
+Personal Interests
+-Hiking
+-Sauna
 
 # README
 
