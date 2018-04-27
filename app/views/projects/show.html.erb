@@ -1,0 +1,18 @@
+<h1><%= @project.name %></h1>
+<% if @project.posts.any? %>
+  <p>Project Reviews</p>
+  <ul>
+    <% @project.posts.each do |single_post| %>
+      <li><%= single_post.caption %> | <%= link_to 'Edit post', edit_project_post_path(@project, single_post) %> | <%= link_to 'Delete Post', project_post_path(@project, single_post), :data => {:confirm => 'Are you sure?', :method => 'delete'} %></li>
+      <% end %>
+    </ul>
+<% else %>
+  <p>No posts yet</p>
+<% end %>
+
+<p><%= link_to 'Add a post', new_project_post_path(@project) %></p>
+<p><%= link_to 'Edit Project', edit_project_path(@project) %></p>
+<p><%= link_to 'Return to Projects', projects_path %></p>
+<p><%= link_to 'Delete', project_path(@project),
+  :data => {:confirm => "Are you sure", :method => "delete"} %>
+</p>
