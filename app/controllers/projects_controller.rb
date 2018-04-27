@@ -39,8 +39,8 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    @project = Project.find(params[:id])
     binding.pry
+    @project = Project.find(params[:id])
     p @project, 'yo'
     @project.destroy
     flash[:notice] = 'Project removed'
