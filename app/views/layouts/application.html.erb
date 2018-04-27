@@ -10,6 +10,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= p flash.now, 'yo' %>
+      <div type="button" class="btn btn-primary">
+        <%= flash[:alert] %>
+        <%= flash[:notice] %>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>
