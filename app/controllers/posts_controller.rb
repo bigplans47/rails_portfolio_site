@@ -20,8 +20,9 @@ class PostsController < ApplicationController
   # end
 
   def show
-    # @project = Project.find(params[:post_id])
+    # @project = Project.find(params[:project_id])
     @post = Post.find(params[:id])
+    # redirect_to project_path(@project)
   end
 
   def edit
