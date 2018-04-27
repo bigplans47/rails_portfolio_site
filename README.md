@@ -15,6 +15,7 @@ Personal Interests
 -At 3pm reviewing information about bootstrap in Rails
 -At 330 work on issue with deleting projects
 4pm notice issue is loading a GET not DELETE Action
+430pm looking at class materials to make controller work
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
