@@ -11,6 +11,8 @@ Personal Interests
 
 # README
 
+-At 1pm sent time reviewing classwork/homework
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
