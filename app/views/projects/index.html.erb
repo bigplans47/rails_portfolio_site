@@ -1,9 +1,11 @@
 <h1 class="jumbotron">Projects</h1>
-
+<%= render "layouts/menu" %>
 <ul>
   <% @projects.each do |single_project| %>
   <li><%= link_to single_project.name, project_path(single_project) %></li>
   <% end %>
 </ul>
 
-<button type="button" class="btn btn-warning"><%= link_to 'Add New Project', new_project_path %></button>
+<% if is_admin? %>
+  <button type="button" class="btn btn-warning"><%= link_to 'Add New Project', new_project_path %></button>
+<% end %>

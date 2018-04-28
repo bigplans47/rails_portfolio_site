@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
-
+  before_action :only => [:new, :edit] do
+    redirect_to edit_user_registration_path unless current_user && current_user.admin
+  end
   def index
     @projects = Project.all
   end

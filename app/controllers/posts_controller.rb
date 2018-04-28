@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!
+  skip_before_action :authenticate_user!, :only => [:index, :show]
   def new
     @project = Project.find(params[:project_id])
     @post = @project.posts.new
