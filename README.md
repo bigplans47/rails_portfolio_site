@@ -16,6 +16,7 @@ Personal Interests
 -At 330 work on issue with deleting projects
 4pm notice issue is loading a GET not DELETE Action
 430pm looking at class materials to make controller work
+510pm not able to make destroy controller work, moving to user account setup
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

@@ -11,17 +11,9 @@
 
   <body>
     <div class="container">
-      <% if flash[:notice] %>
-        <br>
-        <div type="button" class="btn btn-success">
-          <%= flash[:notice] %>
-        </div>
-      <% elsif flash[:alert] %>
-        <br>
-        <div type="button" class="btn btn-danger">
-          <%= flash[:alert] %>
-        </div>
-      <% end %>
+      
+      <%= flash[:alert] %>
+      <%= flash[:notice] %>
       <%= yield %>
     </div>
   </body>
