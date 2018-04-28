@@ -1,4 +1,23 @@
-List your strengths in your README
+How to Start up the project
+
+After cloning run $ bundle install
+
+Then setup database with $rake db:create
+
+Run Migration to make tables $ rake db:migrate
+
+Prepare Test Enviornment $ rake db:test:prepare
+
+To see passing testing run $ rspec
+
+To create a preview site with dummy values loaded in run $ rake db:seed
+
+To launch the preview site run $ rails server
+
+Note, you will need to manually pull up rails console and set yourself as an admin in the users table using a boolean of true to be able to see and access the site as an admin would.
+
+Project
+Based on showing the following qualities
 -Startup - Able to get moving even when starting with scratch
 -Progress - Good at building out features and addressing errors when seen
 -Transparent - Good commit history to clearly see project narrative
