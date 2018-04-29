@@ -41,9 +41,8 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    binding.pry
+    # binding.pry
     @project = Project.find(params[:id])
-    p @project, 'yo'
     @project.destroy
     flash[:notice] = 'Project removed'
     redirect_to projects_path
